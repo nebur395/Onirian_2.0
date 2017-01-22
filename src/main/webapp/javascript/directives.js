@@ -24,6 +24,14 @@ angular.module('onirianApp', [])
         }
     })
 
+    // include the 'music.html' into the <music> tag
+    .directive('music', function () {
+        return {
+            restrict: 'E',
+            templateUrl: 'templates/components/music.html'
+        }
+    })
+
     // include the 'customSlideshow.html' into the <custom-slideshow> tag
     .directive('customSlideshow', function () {
         return {
