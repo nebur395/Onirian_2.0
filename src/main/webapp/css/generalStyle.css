@@ -6,3 +6,8 @@ a, a:focus, a:hover {
 
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
+
+.navbar-hover-style {
+  color: #ffffff;
+  background-color: #b12b3e;
+}
