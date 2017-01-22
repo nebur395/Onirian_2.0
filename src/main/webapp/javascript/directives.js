@@ -1,4 +1,4 @@
-angular.module('trainingTrackerApp')
+angular.module('onirianApp')
 
     // include the 'navbar.html' into the <navbar> tag
     .directive('navbar', function () {
@@ -9,7 +9,7 @@ angular.module('trainingTrackerApp')
         }
     })
 
-    // include the 'record.html' into the <record> tag
+    // include the 'concerts.html' into the <concerts> tag
     .directive('concerts', function () {
         return {
             restrict: 'E',
@@ -25,4 +25,4 @@ angular.module('trainingTrackerApp')
             restrict: 'E',
             templateUrl: 'templates/components/band.html'
         }
-    })
+    });
