@@ -1,0 +1,8 @@
+/* remove the underline link style */
+a, a:focus, a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}

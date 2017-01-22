@@ -1,5 +1,0 @@
-/* remove the underline link style */
-#concertsStyle a, a:focus, a:hover {
-  text-decoration: none;
-  cursor: pointer;
-}
