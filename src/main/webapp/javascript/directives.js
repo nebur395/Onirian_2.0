@@ -28,6 +28,7 @@ angular.module('onirianApp', [])
     .directive('customSlideshow', function () {
         return {
             restrict: 'E',
-            templateUrl: 'templates/components/customSlideshow.html'
+            templateUrl: 'templates/components/customSlideshow.html',
+            controller: 'slideshowCtrl'
         }
     });
