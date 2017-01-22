@@ -14,4 +14,12 @@ angular.module('onirianApp', [])
             restrict: 'E',
             templateUrl: 'templates/components/band.html'
         }
+    })
+
+    // include the 'navbar.html' into the <navbar> tag
+    .directive('navbar', function () {
+        return {
+            restrict: 'E',
+            templateUrl: 'templates/components/navbar.html'
+        }
     });
