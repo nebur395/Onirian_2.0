@@ -22,4 +22,12 @@ angular.module('onirianApp', [])
             restrict: 'E',
             templateUrl: 'templates/components/navbar.html'
         }
+    })
+
+    // include the 'customSlideshow.html' into the <custom-slideshow> tag
+    .directive('customSlideshow', function () {
+        return {
+            restrict: 'E',
+            templateUrl: 'templates/components/customSlideshow.html'
+        }
     });
