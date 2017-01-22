@@ -5,6 +5,7 @@
 *.swp
 *.out
 out/*
+build/
 
 # java specific
 *.class
