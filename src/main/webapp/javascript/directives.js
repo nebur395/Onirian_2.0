@@ -28,7 +28,8 @@ angular.module('onirianApp', [])
     .directive('music', function () {
         return {
             restrict: 'E',
-            templateUrl: 'templates/components/music.html'
+            templateUrl: 'templates/components/music.html',
+            controller: 'musicCtrl'
         }
     })
 
