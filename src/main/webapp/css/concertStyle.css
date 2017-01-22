@@ -1,0 +1,4 @@
+/* remove the underline link style */
+a:focus, a:hover {
+  text-decoration: none;
+}
