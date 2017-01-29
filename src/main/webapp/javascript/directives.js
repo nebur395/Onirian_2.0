@@ -4,7 +4,8 @@ angular.module('onirianApp', [])
     .directive('concerts', function () {
         return {
             restrict: 'E',
-            templateUrl: 'templates/components/concerts.html'
+            templateUrl: 'templates/components/concerts.html',
+            controller: 'concertsCtrl'
         }
     })
 

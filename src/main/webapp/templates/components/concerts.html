@@ -12,30 +12,11 @@
           <th class="w3-padding">Info.</th>
         </tr>
         </thead>
-        <tr>
-          <td class="w3-padding">04.02.2017</td>
-          <td class="w3-padding">Jabalistreffen</td>
-          <td class="w3-padding"><span class="w3-tag w3-red"><a target="_blank" href="javascript:void(0)">Más información</a></span></td>
-        </tr>
-        <tr>
-          <td class="w3-padding">12.11.2016</td>
-          <td class="w3-padding">El Túnel</td>
-          <td class="w3-padding"><span class="w3-tag w3-red"><a target="_blank" href="https://goo.gl/oEuIcM">Más información</a></span></td>
-        </tr>
-        <tr>
-          <td class="w3-padding">02.09.2016</td>
-          <td class="w3-padding">Jardín de la memoria</td>
-          <td class="w3-padding"><span class="w3-tag w3-red"><a target="_blank" href="https://goo.gl/9YDHGi">Más información</a></span></td>
-        </tr>
-        <tr>
-          <td class="w3-padding">27.02.2016</td>
-          <td class="w3-padding">Dpech Rock</td>
-          <td class="w3-padding"><span class="w3-tag w3-red"><a target="_blank" href="https://goo.gl/6dOQzP">Más información</a></span></td>
-        </tr>
-        <tr>
-          <td class="w3-padding">24.10.2015</td>
-          <td class="w3-padding">Sala Zeta</td>
-          <td class="w3-padding"><span class="w3-tag w3-red"><a target="_blank" href="https://goo.gl/BPaGI2">Más información</a></span></td>
+        <tr ng-repeat="concert in concertsList">
+          <td class="w3-padding">{{concert.date}}</td>
+          <td class="w3-padding">{{concert.place}}</td>
+          <td class="w3-padding"><span class="w3-tag w3-red"><a target="_blank" ng-href="{{concert.link}}">Más
+            información</a></span></td>
         </tr>
       </table>
 
