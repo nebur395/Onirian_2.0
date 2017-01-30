@@ -5,7 +5,8 @@ angular.module('onirianApp', [])
         return {
             restrict: 'E',
             templateUrl: 'templates/components/concerts.html',
-            controller: 'concertsCtrl'
+            controller: 'concertsCtrl',
+            scope: {}
         }
     })
 
@@ -14,7 +15,8 @@ angular.module('onirianApp', [])
         return {
             restrict: 'E',
             templateUrl: 'templates/components/band.html',
-            controller: 'bandCtrl'
+            controller: 'bandCtrl',
+            scope: {}
         }
     })
 
@@ -23,7 +25,8 @@ angular.module('onirianApp', [])
         return {
             restrict: 'E',
             templateUrl: 'templates/components/navbar.html',
-            controller: 'navbarCtrl'
+            controller: 'navbarCtrl',
+            scope: {}
         }
     })
 
@@ -32,7 +35,8 @@ angular.module('onirianApp', [])
         return {
             restrict: 'E',
             templateUrl: 'templates/components/music.html',
-            controller: 'musicCtrl'
+            controller: 'musicCtrl',
+            scope: {}
         }
     })
 
@@ -41,6 +45,7 @@ angular.module('onirianApp', [])
         return {
             restrict: 'E',
             templateUrl: 'templates/components/customSlideshow.html',
-            controller: 'slideshowCtrl'
+            controller: 'slideshowCtrl',
+            scope: {}
         }
     });
