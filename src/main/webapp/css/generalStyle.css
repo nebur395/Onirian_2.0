@@ -7,3 +7,7 @@ a, a:focus, a:hover {
 body {
   font-family: "Lato", sans-serif;
 }
+
+.w3-red {
+  background-color: #b12b3e !important;
+}
