@@ -13,28 +13,103 @@
     <div class="w3-row w3-padding-32">
       <div class="w3-third">
         <p>Raúl González</p>
-        <img src="images/raul.jpg" class="w3-round w3-margin-bottom" alt="Raúl González" style="width:60%">
+        <img src="images/raul.jpg" class="w3-round w3-margin-bottom w3-hover-opacity" alt="Raúl González"
+             ng-click="openLightbox();currentLightbox(1)" style="width:60%;cursor:pointer">
       </div>
       <div class="w3-third">
         <p>Víctor García</p>
-        <img src="images/victor.jpg" class="w3-round w3-margin-bottom" alt="Víctor García" style="width:60%">
+        <img src="images/victor.jpg" class="w3-round w3-margin-bottom w3-hover-opacity" alt="Víctor García"
+             ng-click="openLightbox();currentLightbox(2)" style="width:60%;cursor:pointer">
       </div>
       <div class="w3-third">
         <p>Rubén Moreno</p>
-        <img src="images/ruben.jpg" class="w3-round w3-margin-bottom" alt="Rubén Moreno" style="width:60%">
+        <img src="images/ruben.jpg" class="w3-round w3-margin-bottom w3-hover-opacity" alt="Rubén Moreno"
+             ng-click="openLightbox();currentLightbox(3)" style="width:60%;cursor:pointer">
       </div>
       <div class="w3-third">
         <p>Daniel Pérez</p>
-        <img src="images/danielP.jpg" class="w3-round w3-margin-bottom" alt="Daniel Pérez" style="width:60%">
+        <img src="images/danielP.jpg" class="w3-round w3-margin-bottom w3-hover-opacity" alt="Daniel Pérez"
+             ng-click="openLightbox();currentLightbox(4)" style="width:60%;cursor:pointer">
       </div>
       <div class="w3-third">
         <p>Daniel Cruz</p>
-        <img src="images/danielC.jpg" class="w3-round w3-margin-bottom" alt="Daniel Cruz" style="width:60%">
+        <img src="images/danielC.jpg" class="w3-round w3-margin-bottom w3-hover-opacity" alt="Daniel Cruz"
+             ng-click="openLightbox();currentLightbox(5)" style="width:60%;cursor:pointer">
       </div>
       <div class="w3-third">
         <p>Jesús Campillo</p>
-        <img src="images/jesus.jpg" class="w3-round w3-margin-bottom" alt="Jesús Campillo" style="width:60%">
+        <img src="images/jesus.jpg" class="w3-round w3-margin-bottom w3-hover-opacity" alt="Jesús Campillo"
+             ng-click="openLightbox();currentLightbox(6)" style="width:60%;cursor:pointer">
       </div>
     </div>
+
+    <!-- lightbox modals -->
+    <div id="lightboxModal" class="modal">
+      <span class="close cursor" ng-click="closeLightbox()">&times;</span>
+      <div class="modal-content">
+
+        <div class="myLightbox">
+          <div class="numbertext">1 / 6</div>
+          <img src="images/raul.jpg" style="width:100%" alt="Raúl González">
+        </div>
+
+        <div class="myLightbox">
+          <div class="numbertext">2 / 6</div>
+          <img src="images/victor.jpg" style="width:100%" alt="Víctor García">
+        </div>
+
+        <div class="myLightbox">
+          <div class="numbertext">3 / 6</div>
+          <img src="images/ruben.jpg" style="width:100%" alt="Rubén Moreno">
+        </div>
+
+        <div class="myLightbox">
+          <div class="numbertext">4 / 6</div>
+          <img src="images/danielP.jpg" style="width:100%" alt="Daniel Pérez">
+        </div>
+
+        <div class="myLightbox">
+          <div class="numbertext">5 / 6</div>
+          <img src="images/danielC.jpg" style="width:100%" alt="Daniel Cruz">
+        </div>
+
+        <div class="myLightbox">
+          <div class="numbertext">6 / 6</div>
+          <img src="images/jesus.jpg" style="width:100%" alt="Jesús Campillo">
+        </div>
+
+        <a class="prev" ng-click="plusLightbox(-1)">&#10094;</a>
+        <a class="next" ng-click="plusLightbox(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/raul.jpg" style="width:100%" ng-click="currentLightbox(1)" alt="Raúl González">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/victor.jpg" style="width:100%" ng-click="currentLightbox(2)" alt="Víctor García">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/ruben.jpg" style="width:100%" ng-click="currentLightbox(3)" alt="Rubén Moreno">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/danielP.jpg" style="width:100%" ng-click="currentLightbox(4)" alt="Daniel Pérez">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/danielC.jpg" style="width:100%" ng-click="currentLightbox(5)" alt="Daniel Cruz">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/jesus.jpg" style="width:100%" ng-click="currentLightbox(6)" alt="Jesús Campillo">
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>

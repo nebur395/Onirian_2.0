@@ -13,7 +13,8 @@ angular.module('onirianApp', [])
     .directive('band', function () {
         return {
             restrict: 'E',
-            templateUrl: 'templates/components/band.html'
+            templateUrl: 'templates/components/band.html',
+            controller: 'bandCtrl'
         }
     })
 
