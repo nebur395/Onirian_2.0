@@ -7,22 +7,3 @@ a, a:focus, a:hover {
 body {
   font-family: "Lato", sans-serif;
 }
-
-.mySlides {
-  display: none;
-}
-
-#navbarStyle ul li.active a {
-  color: #ffffff;
-  background-color: #b12b3e;
-}
-
-#navbarStyle .navbarPadding {
-  padding: 12px 24px !important;
-}
-
-@media only screen and (max-width: 713px) {
-  #navbarStyle .w3-top li a {
-    padding: 12px 14px !important;
-  }
-}

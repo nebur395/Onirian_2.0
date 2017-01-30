@@ -1,0 +1,40 @@
+#navbarStyle ul li.active a {
+  color: #ffffff;
+  background-color: #b12b3e;
+}
+
+#navbarStyle .navbarPadding {
+  padding: 12px 24px !important;
+}
+
+#navbarStyle #onirianNavbarLogoWhite {
+  display: none;
+  max-width: 66px;
+}
+
+#navbarStyle #onirianNavbarLogoBlack {
+  display: inline;
+  max-width: 66px;
+}
+
+@media only screen and (max-width: 715px) {
+  #navbarStyle .w3-top li a {
+    padding: 12px 14px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #navbarStyle .w3-top li a {
+    padding: 12px 14px !important;
+  }
+
+  #navbarStyle #onirianNavbarLogoWhite {
+    display: inline;
+    max-width: 66px;
+  }
+
+  #navbarStyle #onirianNavbarLogoBlack {
+    display: none;
+    max-width: 66px;
+  }
+}
