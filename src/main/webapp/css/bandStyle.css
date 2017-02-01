@@ -39,7 +39,7 @@
 }
 
 #bandStyle .close:hover,
-.close:focus {
+#bandStyle .close:focus {
   color: #999;
   text-decoration: none;
   cursor: pointer;
@@ -53,7 +53,7 @@
 
 /* Next & previous buttons */
 #bandStyle .prev,
-.next {
+#bandStyle .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -89,10 +89,11 @@
 
 #bandStyle img.demo {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 #bandStyle .active,
-.demo:hover {
+#bandStyle .demo:hover {
   opacity: 1!important;
 }
 
