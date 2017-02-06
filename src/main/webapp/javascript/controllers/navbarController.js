@@ -47,7 +47,7 @@ angular.module('onirianApp')
                 topMenu = $("#navbarStyle"),
                 topMenuHeight = 47, // navbar height offset
                 // All list items
-                menuItems = topMenu.find("a"),
+                menuItems = topMenu.find("ul > li a"),
                 // Anchors corresponding to menu items
                 scrollItems = menuItems.map(function () {
                     var item = $($(this).attr("href"));

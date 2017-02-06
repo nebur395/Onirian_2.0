@@ -17,9 +17,31 @@
   max-width: 66px;
 }
 
-@media only screen and (max-width: 715px) {
+#navbarStyle #socialNavbarIcons li a {
+  padding: 12px 5px !important;
+}
+
+#navbarStyle #socialNavbarIcons li a:hover i.fa.fa-facebook-official{
+  color: #3f51b5!important;
+}
+
+#navbarStyle #socialNavbarIcons li a:hover i.fa.fa-youtube{
+  color: #f44336!important;
+}
+
+#navbarStyle #socialNavbarIcons li a:hover i.fa.fa-twitter{
+  color: #87CEEB!important;
+}
+
+@media only screen and (max-width: 785px) {
   #navbarStyle .w3-top li a {
     padding: 12px 14px !important;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  #navbarStyle .w3-top li a {
+    padding: 12px 8px !important;
   }
 }
 
