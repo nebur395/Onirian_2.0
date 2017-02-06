@@ -54,7 +54,7 @@ angular.module('onirianApp')
                     if (item.length) { return item; }
                 });
 
-            $(window).scroll(function() {
+            $(window).scroll(function(e){
                 // Get container scroll position
                 var fromTop = $(this).scrollTop() + topMenuHeight;
 
@@ -67,6 +67,12 @@ angular.module('onirianApp')
                 // Get the id of the current element
                 cur = cur[cur.length-1];
                 var id = cur && cur.length ? cur[0].id : "";
+
+                if ($(window).scrollTop() +  window.innerHeight + 115 >= $(document).height())
+                    id = "onirianMusic";
+
+                if ($(window).scrollTop() +  window.innerHeight == $(document).height())
+                    id = "onirianContact";
 
                 if (lastId !== id) {
                     lastId = id;
