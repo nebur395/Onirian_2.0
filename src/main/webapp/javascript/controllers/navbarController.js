@@ -12,8 +12,9 @@ angular.module('onirianApp')
             }
         };
 
-        // Smooth scrolling section
         $(document).ready(function(){
+
+            // SMOOTH SCROLLING SECTION
 
             // Add smooth scrolling on all links inside the navbar
             $("#navbarStyle a").on('click', function(event) {
@@ -39,10 +40,12 @@ angular.module('onirianApp')
                 } // End if
             });
 
+            // SCROLLSPY SECTION
+
             // Cache selectors
             var lastId,
                 topMenu = $("#navbarStyle"),
-                topMenuHeight = 47,
+                topMenuHeight = 47, // navbar height offset
                 // All list items
                 menuItems = topMenu.find("a"),
                 // Anchors corresponding to menu items
@@ -73,7 +76,5 @@ angular.module('onirianApp')
                         .end().filter("[href='#" + id + "']").parent().addClass("active");
                 }
             });
-
         });
-
     }]);
