@@ -4,7 +4,7 @@
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center">TODOS NUESTROS CONCIERTOS</h2>
 
-      <div class="w3-responsive">
+      <div id="concertsNormal">
         <table class="w3-table-all w3-hoverable w3-border w3-white w3-text-grey w3-centered">
 
           <thead>
@@ -20,6 +20,24 @@
             <td class="w3-padding">{{concert.place}}</td>
             <td class="w3-padding"><span class="w3-tag w3-red"><a target="_blank" ng-href="{{concert.link}}">Más
             información</a></span></td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="concertsSmall">
+        <table class="w3-table-all w3-hoverable w3-border w3-white w3-text-grey w3-centered">
+
+          <thead>
+          <tr class="w3-light-grey">
+            <th class="w3-padding">Fecha</th>
+            <th class="w3-padding">Info.</th>
+          </tr>
+          </thead>
+
+          <tr ng-repeat="concert in concertsList">
+            <td class="w3-padding">{{concert.date}}</td>
+            <td class="w3-padding"><span class="w3-tag w3-red"><a target="_blank" ng-href="{{concert.link}}">
+              {{concert.place}}</a></span></td>
           </tr>
         </table>
       </div>

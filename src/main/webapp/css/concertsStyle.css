@@ -1,0 +1,17 @@
+#concertsStyle #concertsNormal {
+  display: block;
+}
+
+#concertsStyle #concertsSmall {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #concertsStyle #concertsNormal {
+    display: none;
+  }
+
+  #concertsStyle #concertsSmall {
+    display: block;
+  }
+}
