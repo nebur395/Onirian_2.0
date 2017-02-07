@@ -74,6 +74,16 @@ angular.module('onirianApp')
                 if ($(window).scrollTop() +  window.innerHeight == $(document).height())
                     id = "onirianContact";
 
+                if (id == "onirianHome") {
+                    $("#toTopButton a").removeClass("appear");
+                    $("#toTopButton a").addClass("disappear");
+                }
+
+                if (id != "onirianHome") {
+                    $("#toTopButton a").removeClass("disappear");
+                    $("#toTopButton a").addClass("appear");
+                }
+
                 if (lastId !== id) {
                     lastId = id;
                     // Set/Remove active class

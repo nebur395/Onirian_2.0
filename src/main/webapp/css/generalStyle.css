@@ -16,8 +16,33 @@ body {
   position: fixed;
   bottom: 30px;
   right: 30px;
+  z-index: 1;
 }
 
 #toTopButton a {
   box-shadow: 0 2px 5px #000;
+}
+
+#toTopButton a:hover {
+  box-shadow: 0 5px 8px #666;
+}
+
+#toTopButton a.appear {
+  animation: topButton-appear 0.5s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes topButton-appear {
+  from {opacity: 0; transform: scale(0)}
+  to {opacity: 1; transform: scale(1)}
+}
+
+#toTopButton a.disappear {
+  animation: topButton-disappear 0.5s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes topButton-disappear {
+  from {opacity: 1; transform: scale(1)}
+  to {opacity: 0; transform: scale(0)}
 }
