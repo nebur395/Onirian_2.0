@@ -13,12 +13,12 @@ targetCompatibility = 1.8
 version = '1.0-SNAPSHOT'
 
 jar {
-    baseName = 'onirian'
+    baseName = 'Onirian'
     version = '1.0'
 }
 
 war {
-    baseName = 'onirian'
+    baseName = 'Onirian'
 }
 
 repositories {
@@ -33,3 +33,12 @@ gretty {
     contextPath = ''
     interactiveMode = 'rebuildAndRestartOnKeyPress'
 }
+
+task stage(dependsOn: ['clean', 'appRun'])
+appRun.mustRunAfter clean
+
+task copyToLib (type: Copy) {
+    into "$buildDir/lib"
+    from(configurations.compile)
+}
+stage.dependsOn(copyToLib)
