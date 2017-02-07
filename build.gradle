@@ -34,11 +34,3 @@ gretty {
     interactiveMode = 'rebuildAndRestartOnKeyPress'
 }
 
-task stage(dependsOn: ['clean', 'appRun'])
-appRun.mustRunAfter clean
-
-task copyToLib (type: Copy) {
-    into "$buildDir/lib"
-    from(configurations.compile)
-}
-stage.dependsOn(copyToLib)
