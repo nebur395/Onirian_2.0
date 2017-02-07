@@ -11,3 +11,13 @@ body {
 .w3-red {
   background-color: #b12b3e !important;
 }
+
+#toTopButton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+#toTopButton a {
+  box-shadow: 0 2px 5px #000;
+}
