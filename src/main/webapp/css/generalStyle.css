@@ -28,7 +28,7 @@ body {
 }
 
 #toTopButton a.appear {
-  animation: topButton-appear 0.5s linear;
+  animation: topButton-appear 0.3s linear;
   animation-fill-mode: forwards;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 #toTopButton a.disappear {
-  animation: topButton-disappear 0.5s linear;
+  animation: topButton-disappear 0.3s linear;
   animation-fill-mode: forwards;
 }
 
