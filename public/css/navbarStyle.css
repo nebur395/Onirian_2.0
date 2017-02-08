@@ -61,6 +61,9 @@
   #navbarStyle .socialNavbarIcons,
   #navbarStyle .socialNavbarIcons li,
   #navbarStyle .socialNavbarIcons li a {
-    display: inline-flex;
+    display: flex;
+  }
+  #navbarStyle .socialNavbarIcons li a {
+    margin: auto;
   }
 }
